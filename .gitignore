@@ -9,3 +9,4 @@ __pycache__/
 todo.md
 f1_dbt/logs/
 f1_dbt/target/
+logs/
