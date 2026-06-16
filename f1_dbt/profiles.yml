@@ -1,0 +1,12 @@
+f1_project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: f1user
+      password: f1password
+      port: 5432
+      dbname: f1_dbt_db
+      schema: public
+      threads: 4

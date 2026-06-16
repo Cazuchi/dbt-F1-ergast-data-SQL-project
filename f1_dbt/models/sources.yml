@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: f1
+    schema: public
+    tables:
+      - name: drivers
+      - name: constructors
+      - name: circuits
+      - name: race_statuscodes
+      - name: races
+      - name: results
+      - name: constructor_standings
+      - name: constructor_results
+      - name: driver_standings
+      - name: lap_times
+      - name: pit_stops

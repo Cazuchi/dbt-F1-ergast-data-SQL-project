@@ -1,0 +1,9 @@
+name: 'f1_project'
+version: '1.0.0'
+profile: 'f1_project'
+
+model-paths: ["models"]
+
+models:
+  f1_project:
+    +materialized: table
