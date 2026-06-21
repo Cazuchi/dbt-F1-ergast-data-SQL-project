@@ -39,7 +39,7 @@ SELECT
     fot."Team/Drivers combo race counter"
 FROM {{ ref('team_final_output_table') }} fot
 LEFT JOIN {{ source('f1', 'races') }} rc ON fot."Race ID" = rc.raceid
-WHERE fot."Team/Drivers combo race counter" >= 10
+WHERE fot."Team/Drivers combo race counter" >= 10 AND fot."Driver #1 rolling STDDEV" IS NOT NULL AND fot."Driver #2 rolling STDDEV" IS NOT NULL
 WINDOW 
     stint_window_driver_1 AS (
         PARTITION BY fot."Driver #1 name", fot."G&L distance measure"
